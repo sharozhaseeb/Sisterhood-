@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/DOMESTIC_VIOLENCE"
+        android:title="Domestic Violence" />
+
+    <item
+        android:id="@+id/Harassment"
+        android:title="Harassment" />
+
+    <item
+        android:id="@+id/SexualAssault"
+        android:title="Sexual Assault" />
+
+    <item
+        android:id="@+id/Stalking"
+        android:title="Stalking" />
+
+</menu>

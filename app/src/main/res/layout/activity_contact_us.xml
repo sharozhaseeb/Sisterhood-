@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout_bottom_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/action_bar_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:autoSizeTextType="uniform"
+            android:breakStrategy="balanced"
+            android:maxLines="1"
+            android:text="Contact Us"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="My name here"
+        app:drawableStartCompat="@drawable/ic_person_outline_24_selected" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="My number here"
+        app:drawableStartCompat="@drawable/ic_baseline_dialpad_24"
+        app:drawableTint="@color/green" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="My message here"
+        app:drawableStartCompat="@drawable/ic_baseline_message_24"
+        app:drawableTint="@color/green" />
+
+</LinearLayout>

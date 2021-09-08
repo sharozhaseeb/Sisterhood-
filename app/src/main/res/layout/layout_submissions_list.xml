@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout_submissions"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:elevation="7dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dateTimeTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2021-08-21 20-54-27" />
+
+    <TextView
+        android:id="@+id/nameTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sharoz" />
+
+    <TextView
+        android:id="@+id/cityNameTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City name: Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/latitudeTvLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comma_tv_layout"
+            android:text=" , " />
+
+        <TextView
+            android:id="@+id/longitudeTvLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ratingTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating: 0" />
+
+    <TextView
+        android:id="@+id/descTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desc" />
+
+</LinearLayout>

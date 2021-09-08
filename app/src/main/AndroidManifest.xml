@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sisterhood.mapsproject">
+    <!-- Ye dono permissions zaruri hen location access krne k lie -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MapsProject">
+        <activity android:name=".FaqActivity"></activity>
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".AddEmergencyActivity" />
+        <activity android:name=".HideAppActivity" />
+        <activity android:name=".ViewSubmissionsActivity" />
+        <activity android:name=".SecondRegistrationActivity" />
+        <!--
+
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".SubmitReportsActivity" />
+        <activity android:name=".SubmitCarsActivity" />
+        <activity android:name=".ViewSubmissionsCarsActivity" />
+        <activity android:name=".ActivityLogin" />
+        <activity android:name=".ActivitySignUp" />
+        <activity android:name=".BottomNavigationActivity" />
+        <!--
+            android:configChanges="uiMode"
+THIS LINE IS NECESSARY FOR DARK MODE WITH OUT ANIMATION
+        -->
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="uiMode"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".MyBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

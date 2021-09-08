@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout_news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie Angelina jolie "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/updatedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:text="Updated hour ago"
+        android:textSize="13sp" />
+
+</LinearLayout>
